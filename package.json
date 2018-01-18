@@ -1,0 +1,42 @@
+{
+  "name": "dom-exist",
+  "version": "1.0.0",
+  "description": "check a document element is exist",
+  "main": "dist/dom-exist.js",
+  "module": "src/index.js",
+  "files": [
+    "dist/dom-exist.js",
+    "src/index.js"
+  ],
+  "scripts": {
+    "test": "karma start",
+    "bundle": "rollup src/index.js -f umd -n domExist -o dist/dom-exist.js",
+    "uglify": "uglifyjs dist/dom-exist.js -m -o dist/dom-exist.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klouskingsley/dom-exist.git"
+  },
+  "keywords": [
+    "document",
+    "element",
+    "exist"
+  ],
+  "author": "klouskingsley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klouskingsley/dom-exist/issues"
+  },
+  "homepage": "https://github.com/klouskingsley/dom-exist#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "karma": "^2.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "mocha": "^5.0.0",
+    "rollup": "^0.54.1",
+    "uglify-js": "^3.3.7"
+  }
+}
